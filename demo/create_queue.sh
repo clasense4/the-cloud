@@ -1,0 +1,1 @@
+aws sqs create-queue --queue-name the-cloud --region us-east-1 --profile fm

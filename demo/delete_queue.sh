@@ -1,0 +1,1 @@
+aws sqs delete-queue --queue-url https://queue.amazonaws.com/XXXXXXXXXXXX/the-cloud --region us-east-1 --profile fm
