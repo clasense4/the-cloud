@@ -1,5 +1,11 @@
 # Cloud Architecture - Serverless Indonesia - Talks
 
+## Deploy
+
+```
+now --prod
+```
+
 ## Generate as PDF
 
 ```
