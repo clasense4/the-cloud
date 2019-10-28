@@ -13,5 +13,5 @@ npm install -g decktape
 # Or if it doesn't work
 # sudo npm install -g decktape --unsafe-perm
 
-decktape reveal index.html the-cloud.pdf
+decktape reveal public/cloud-architecture.html the-cloud.pdf
 ```
