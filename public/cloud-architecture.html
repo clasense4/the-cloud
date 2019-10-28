@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>The Cloud: What’s Different?</title>
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>The Cloud: What’s Different?</h3>
+					<p>
+						Fajri Abdillah
+						<br>
+						fajri@serverless.id
+					</p>
+				</section>
+				<section>
+					<p class="fragment" data-fragment-index="1">
+						Every business required a system that can satisfied the customer
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Happy customer == More money
+					</p>
+				</section>
+				<section data-background-image="images/imgix-391808-unsplash.jpg">
+					<br>
+					<h4 style="color:white">
+						Traditional (owned and operated) IT Infrastructure
+					</h4>
+					<p>
+						<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@imgix?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from imgix"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">imgix</span></a>
+					</p>
+				</section>
+				<section>
+					<h4>
+						Business Point of View
+					</h4>
+					<p class="fragment" data-fragment-index="1">
+						1. Higher investment in Hardware
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						2. Too much server is costly
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						3. Too few server is making Our Customer unhappy
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						4. Higher Total Cost Of Ownership <a href="https://www.investopedia.com/terms/t/totalcostofownership.asp" target="_blank">(TCO)</a>
+					</p>
+				</section>
+				<section>
+					<h4>
+						Technical Point of View
+					</h4>
+					<p class="fragment" data-fragment-index="1">
+						1. More time for capacity planning
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						2. Harder to keep up with Customer Data <br> (Harder to Scale)
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						3. More "Server" team
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						4. Slower in delivering software
+					</p>
+				</section>
+				<section data-background-image="images/pero-kalimero-304081-unsplash.jpg">
+					<h4>Cloud</h4>
+					<p>
+						<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@pericakalimerica?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Pero Kalimero"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Pero Kalimero</span></a>
+					</p>
+				</section>
+				<section>
+					<h4>
+						Business Point of View
+					</h4>
+					<p class="fragment" data-fragment-index="1">
+						1. No investment in Hardware <br> (<a href="https://aws.amazon.com/pricing/" target="_blank" rel="noopener noreferrer">Pay as you go, pay per use</a>)
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						2. Too much server is <a href="https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/" target="_blank" rel="noopener noreferrer">less</a> costly <br> (Add more server when needed)
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						3. No more too few server <br> (<a href="https://aws.amazon.com/autoscaling/" target="_blank" rel="noopener noreferrer">Autoscaling</a> to the rescue)
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						4. Lower Total Cost Of Ownership <a href="https://aws.amazon.com/tco-calculator/" target="_blank">(TCO Calculator)</a>
+					</p>
+				</section>
+				<section>
+					<h4>
+						Technical Point of View
+					</h4>
+					<p class="fragment" data-fragment-index="1">
+						1. Less time for <a href="https://aws.amazon.com/ec2/instance-types/" target="_blank" rel="noopener noreferrer">capacity planning</a>
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						2. Easier to keep up with Customer Data <br> (<a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html" target="_blank" rel="noopener noreferrer">Easier to scale</a>)
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						3. Less "Server" team
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						4. <a href="https://aws.amazon.com/devops/" target="_blank" rel="noopener noreferrer">Faster</a> in delivering software
+					</p>
+				</section>
+
+				<section>
+					<h4><a href="https://www.youtube.com/watch?v=xQBNn67rL_o" target="_blank" rel="noopener noreferrer">Airbnb in 4 years (2010 - 2013)</a></h4>
+					<p class="fragment" data-fragment-index="1">
+						2 Billion rows stored in RDS
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						From 24 EC2 instances to 1000 EC2 instances
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						From 300GB of Photos to 50TB of Photos in S3
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						5 person operations team
+					</p>
+				</section>
+
+				<section data-background-image="images/aws_global_infrastructure.png">
+					<a href="https://infrastructure.aws" target="_blank" rel="noopener noreferrer" style="color:white; position: relative;">https://infrastructure.aws</a>
+				</section>
+				<section data-background-image="images/kaushik-panchal-37070-unsplash.jpg">
+					<h4>Serverless Architectures for Web Applications</h4>
+					<p>
+						<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@kaushikpanchal?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Kaushik Panchal"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Kaushik Panchal</span></a>
+					</p>
+				</section>
+				<section>
+					<h4>What is serverless? [<a href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer">1</a>][<a href="https://medium.com/@PaulDJohnston/a-simple-definition-of-serverless-8492adfb175a" target="_blank" rel="noopener noreferrer">2</a>][<a href="https://read.acloud.guru/whats-this-serverless-thing-anyway-b101cb72c7e6" target="_blank" rel="noopener noreferrer">3</a>]</h4>
+					<p class="fragment" data-fragment-index="1">
+						Native architecture of the cloud that enables you to focus on <u>business</u> not infrastructure
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Build and run applications and services <u>without thinking about servers</u>
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						<u>No need to thinking about</u> : server provisioning, patching, maintenance and capacity provisioning
+					</p>
+				</section>
+				<section>
+					<h4>Why use serverless?</h4>
+					<p class="fragment" data-fragment-index="1">
+						Build modern applications with increased agility and lower TCO
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Built-in high availability and fault tolerance, security is included
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						Developers can focus on code not infrastructure, more vacation time
+					</p>
+				</section>
+				<section>
+					<h4>Who use serverless?</h4>
+				</section>
+				<section>
+					<h5>Better Australian Census Website (Original)</h5>
+					<p class="fragment" data-fragment-index="1">
+						Cost <strong>$9,000,000</strong> with <strong>$400,000</strong> on load testing alone
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Load tested at a <strong>150%</strong> of expected usage levels
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						"It crashed pretty much straight away" - Austin Wilshire
+					</p>
+				</section>
+				<section>
+					<h5>Better Australian Census Website (<a href="https://serverless.com/blog/building-a-better-australian-census-site/" target="_blank" rel="noopener noreferrer">Serverless</a>)</h5>
+					<p class="fragment" data-fragment-index="1">
+						Cost <strong>$500</strong> and under <strong>24 hours</strong> of total work
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Built by 2 University student that totally new to AWS
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						Tested with <a href="https://goad.io/" target="_blank" rel="noopener noreferrer">goad.io</a> to achieve up to 100k requests per second
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						"cool: QUT Students built an Australian Census system for $500 that does not #CensusFail" <br> <a href="https://twitter.com/Werner/status/765599106387542016/photo/1" target="_blank" rel="noopener noreferrer">Werner Vogels</a> [<a href="https://www.dailymail.co.uk/news/article-3742618/Two-university-students-just-54-hours-build-Census-website-WORKS-10-MILLION-ABS-disastrous-site.html" target="_blank" rel="noopener noreferrer">1</a>] [<a href="https://eftm.com/2016/08/how-two-uni-students-built-a-better-census-site-in-just-54-hours-for-500-30752" target="_blank" rel="noopener noreferrer">2</a>]
+					</p>
+				</section>
+				<section>
+					<h5><a href="https://medium.com/serverless-indonesia/aws-big-data-journey-building-mobile-apps-analytics-service-82aedf9643a1" target="_blank" rel="noopener noreferrer">Mobile Analytics as a Service</a></h5>
+				</section>
+				<section data-background-image="images/maas_stage5.png">
+				</section>
+				<section>
+					<p>
+						11 million messages in SQS
+					</p>
+					<a href="images/sqs_result_1.png" target="_blank" rel="noopener noreferrer"><img src="images/sqs_result_1.png" alt=""></a>
+				</section>
+				<section>
+					<p>
+						How big is 10 million messages?
+					</p>
+					<p class="fragment" data-fragment-index="1">
+						100 KB * 10 = 1,000 KB = 1 MB
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						100 KB * 100 = 10,000 KB = 10 MB
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						100 KB * 1,000 = 100,000 KB = 100 MB
+					</p>
+
+				</section>
+				<section>
+					<p class="fragment" data-fragment-index="1">
+						100 KB * 10,000 = 1,000,000 KB = 1,000 MB = 1 GB
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						100 KB * 100,000 = 10,000,000 KB = 10,000 MB = 10 GB
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						100 KB * 1,000,000 = 100,000,000 KB
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						= 100,000 MB = 100 GB
+					</p>
+				</section>
+				<section>
+					<p class="fragment" data-fragment-index="1">
+						100 KB * 10,000,000 = 1,000,000,000 KB
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						= 1,000,000 MB = 1,000 GB
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						 = <strong>1 TB</strong>
+					</p>
+				</section>
+				<section>
+					<p class="fragment" data-fragment-index="1">
+						Messages in Flight
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Processing ~2000 Messages / second
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						100 KB * 2,000 = 200,000 KB = <strong>200 MB / second</strong>
+					</p>
+				</section>
+
+				<section>
+					<h4><a href="https://aws.amazon.com/sqs/" target="_blank" rel="noopener noreferrer">AWS SQS</a></h4>
+					<p>
+						Amazon Simple Queue Service (Amazon SQS) offers a secure, durable, and available hosted queue that lets you integrate and decouple distributed software systems and components.
+					</p>
+				</section>
+
+				<section>
+					<h5>Redis based Queue</h5>
+				</section>
+				<section data-background-image="images/Redis-Queue.png">
+				</section>
+
+				<section>
+					<h5>SQS based Queue</h5>
+				</section>
+				<section data-background-image="images/SQS_cloudcraft.png">
+				</section>
+
+				<section>
+					<h5>SQS - Power Features</h5>
+					<p class="fragment" data-fragment-index="1">
+						Serverless - No need to think about server, battle tested  <a href="https://aws.amazon.com/blogs/aws/amazon_simple_q/">since 2006</a>
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						<a href="https://aws.amazon.com/sqs/features/">Unlimited Throughput</a>  - Standard queues support a nearly unlimited number of transactions per second
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						<a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html">Security</a> - Control who can send messages to and receive messages from an Amazon SQS queue
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						Durability - Make use of <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html">dead letter queue</a>, no data is missing, up to 14 days data retention.
+					</p>
+					<p class="fragment" data-fragment-index="5">
+						<a href="https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html">Event Source</a> - Lambda can process message in SQS
+					</p>
+				</section>
+				<section>
+					<h5>SQS - Limitations</h5>
+					<p class="fragment" data-fragment-index="1">
+						Single Consumer - once a consumer processed a message then message is removed
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Tricky pricing - <a href="https://aws.amazon.com/sqs/pricing/">Billed per transaction</a>, chunked per 64 KB, but still cheap
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						<a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-limits.html">Limited payload size</a> - 256 KB, can use S3 for bigger payload, up to 2 GB, but more expensive
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						<a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-delay-queues.html">Delay queue</a> - Maximum 15 minutes
+					</p>
+					<p class="fragment" data-fragment-index="5">
+						Maximum batch message - 10 messages or 256 KB
+					</li>
+				</section>
+				<section>
+					<h5>SQS - Pricing</h5>
+					<table>
+						<thead>
+							<th></th>
+							<th>Price per 1 Million Requests after Free Tier (Monthly)</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Standard Queue</strong></td>
+								<td>$0.40 ($0.00000040 per request)</td>
+							</tr>
+							<tr>
+								<td><strong>FIFO Queue</strong></td>
+								<td>$0.50 ($0.00000050 per request)</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h5>SQS - Demo</h5>
+				</section>
+
+				<section>
+					<h3>Thank You</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Transition style
+				transition: 'none',
+				slideNumber: 'c/t',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
