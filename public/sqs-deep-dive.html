@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>The Cloud: What’s Different?</title>
+		<title>SQS Deep dive : cost, performance, management & security</title>
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -46,15 +46,12 @@
 						Cost
 					</p>
 					<p>
-						Management
-					</p>
-					<p>
-						Security
+						Management & Security
 					</p>
 				</section>
 
 				<section>
-					<h5>About SQS</h5>
+					<h4>About SQS</h4>
 				</section>
 				<section>
 					<h4><a href="https://aws.amazon.com/sqs/" target="_blank" rel="noopener noreferrer">AWS SQS</a></h4>
@@ -110,7 +107,7 @@
 				</section>
 
 				<section>
-					<h5>Performance</h5>
+					<h4>Performance</h4>
 				</section>
 				<section>
 					<h5><a href="https://medium.com/serverless-indonesia/aws-big-data-journey-building-mobile-apps-analytics-service-82aedf9643a1" target="_blank" rel="noopener noreferrer">Mobile Analytics as a Service</a></h5>
@@ -253,6 +250,20 @@
 						</tbody>
 					</table>
 				</section>
+				</section>
+				<section>
+					<h5>SQS - Pricing Estimation* (ap-southeast-1)</h5>
+					
+					<p class="fragment" data-fragment-index="1">
+						Daily Request = 40 million
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Total Pricing = 40 * 31 * $0.40
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						Monthly Pricing = <strong>$496</strong>
+					</p>
+				</section>
 				<section>
 					<h5><a href="https://aws.amazon.com/elasticache/pricing/" target="_blank" rel="noopener noreferrer">Elasticache - Pricing</a> (ap-southeast-1)</h5>
 					<table>
@@ -272,8 +283,35 @@
 						</tbody>
 					</table>
 				</section>
+
 				<section>
-					<h5>SQS - Demo</h5>
+					<h4>Management & Security</h4>
+					<p class="fragment" data-fragment-index="1">
+						Avoid using IAM user with AdministratorAccess Policy
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Use <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html" target="_blank" rel="noopener noreferrer">IAM Role</a> when possible
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						Limit the <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-using-identity-based-policies.html" target="_blank" rel="noopener noreferrer">policy</a> (<a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-basic-examples-of-iam-policies.html" target="_blank" rel="noopener noreferrer">IAM</a> or <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-basic-examples-of-sqs-policies.html" target="_blank" rel="noopener noreferrer">SQS</a> )
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						Use STS service for <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-using-temporary-security-credentials.html" target="_blank" rel="noopener noreferrer">temporary access</a>
+					</p>
+				</section>
+
+				<section>
+					<h4>Management & Security</h4>
+					<p class="fragment" data-fragment-index="1">
+						Use <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-server-side-encryption.html" target="_blank" rel="noopener noreferrer">Server-Side Encryption</a> when needed
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Use <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-vpc-endpoints.html" target="_blank" rel="noopener noreferrer">VPC Endpoints</a> when needed
+					</p>
+				</section>
+
+				<section>
+					<h4>SQS - Demo</h4>
 				</section>
 				<section>
 					<h3>Thank You</h3>
