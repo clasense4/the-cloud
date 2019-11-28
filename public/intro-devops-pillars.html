@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Intro to DevOps Pillars with AWS Cloudformation</title>
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Intro to DevOps Pillars with AWS Cloudformation</h3>
+					<p>
+						Fajri Abdillah
+						<br>
+                        fajri @ [horangi.com, serverless.id, myedisi.com]
+                        <br>
+                        Road to DevOpsDay Jakarta 2020
+					</p>
+				</section>
+				<section>
+					<h4>Agenda</h4>
+					<p>
+						About me
+					</p>
+					<p>
+						DevOps - What?
+					</p>
+					<p>
+						DevOps - Why?
+					</p>
+					<p>
+						DevOps - Pillars
+					</p>
+					<p>
+						Cloudformation Demo
+					</p>
+				</section>
+
+				<section>
+					<h4>About Me</h4>
+					<p class="fragment" data-fragment-index="1">
+						Software Engineer at Horangi Cyber Security
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        Currently, build the 5th saltwater tank
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						I don't have any AWS certification (yet)
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						Learn AWS the hard way
+					</p>
+                </section>
+
+                <section>
+					<h4>DevOps - What?</h4>
+					<p class="fragment" data-fragment-index="1">
+						DevOps is a set of practices that  <strong>automates</strong> the processes between software development and IT teams, so that they can build, test, and release software <strong>faster and more reliably</strong>
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						A running well DevOps culture would result in a great product that is stable and increasing its value
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						At its essence, DevOps is a culture, a movement, a philosophy
+					</p>
+                </section>
+
+                <section>
+					<h4>DevOps - Why?</h4>
+					<p class="fragment" data-fragment-index="1">
+                        Teams that practice DevOps deploy 30x more frequently, have 60x fewer failures and recover 160x faster. — Puppet Labs 2016 State of DevOps Report
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						You can innovate faster than your competitor because you release more frequent
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						Faster feedback from your customer
+					</p>
+                </section>
+
+                <section>
+					<h4>DevOps - Pillars</h4>
+					<p class="fragment" data-fragment-index="1">
+                        Continuous Integration
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        Continuous Delivery
+					</p>
+					<p class="fragment" data-fragment-index="3">
+                        Continuous Deployment
+					</p>
+					<p class="fragment" data-fragment-index="4">
+                        Infrastructure as a Code
+					</p>
+					<p class="fragment" data-fragment-index="5">
+                        Monitoring
+					</p>
+					<p class="fragment" data-fragment-index="6">
+                        Logging
+					</p>
+					<p class="fragment" data-fragment-index="7">
+                        Communication & Collaboration
+					</p>
+                </section>
+
+                <section>
+					<h4>Continuous Integration</h4>
+					<p class="fragment" data-fragment-index="1">
+                        Development practice where developers integrate code into a shared repository frequently
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        Each integration can then be verified by an automated build and automated tests
+					</p>
+					<p class="fragment" data-fragment-index="3">
+                        One of the key benefits of integrating regularly is that you can detect errors quickly and locate them more easily
+					</p>
+					<p class="fragment" data-fragment-index="4">
+                        Example: Jenkins, AWS CodeBuild
+                    </p>    
+                </section>
+
+                <section>
+					<h4>Continuous Delivery</h4>
+					<p class="fragment" data-fragment-index="1">
+                        Development practice of keeping your codebase deployable at any point
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        Usually combined with CI and resulting in a <strong>build artifact</strong>
+					</p>
+					<p class="fragment" data-fragment-index="3">
+                        Example: Elastic Beanstalk deploy, serverless deploy
+					</p>
+                </section>
+
+                <section>
+					<h4>Continuous Deployment</h4>
+					<p class="fragment" data-fragment-index="1">
+                        Development practice of keeping your codebase automatically deploy when it pass all test
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        When this practice applied on Dev environment, the developer can see their changes live
+					</p>
+					<p class="fragment" data-fragment-index="3">
+                        Example: AWS CodePipeline and AWS CodeDeploy
+					</p>
+                </section>
+
+                <section>
+					<h4>Infrastructure as a code</h4>
+					<p class="fragment" data-fragment-index="1">
+                        Practice in system architecture where resources is define in a code
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        Easily replicating the whole infrastructure
+					</p>
+					<p class="fragment" data-fragment-index="3">
+                        You can create the whole infra with 1 button push
+					</p>
+					<p class="fragment" data-fragment-index="4">
+                        You can destroy the whole infra with 1 button push
+					</p>
+					<p class="fragment" data-fragment-index="5">
+                        Example: AWS Cloudformation, AWS CDK, Terraform, Pulumi
+					</p>
+                </section>
+
+                <section>
+					<h4>Monitoring</h4>
+					<p class="fragment" data-fragment-index="1">
+                        A product / system must be monitored to understand itself
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        With this practice, you can react faster
+					</p>
+					<p class="fragment" data-fragment-index="3">
+                        Business is depends on this practice
+					</p>
+					<p class="fragment" data-fragment-index="4">
+                        Example: AWS Cloudwatch, Prometheus, Grafana
+					</p>
+                </section>
+
+                <section>
+					<h4>Logging</h4>
+					<p class="fragment" data-fragment-index="1">
+                        We don't really care when everything goes well
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        We really care when everything goes not well
+					</p>
+					<p class="fragment" data-fragment-index="3">
+                        Centralized logging is needed in microservice
+					</p>
+					<p class="fragment" data-fragment-index="4">
+                        Example: AWS Cloudwatch logs, ELK Stack
+					</p>
+                </section>
+
+                <section>
+					<h4>Communication & Collaboration</h4>
+					<p class="fragment" data-fragment-index="1">
+                        The result of good DevOps practice would increasing this aspect
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        Not only between developers, but also with marketing, operations and another team
+					</p>
+					<p class="fragment" data-fragment-index="2">
+                        Horangi use slack extensively
+					</p>
+					<p class="fragment" data-fragment-index="5">
+                        Example: Slack, Hipchat, JIRA, Trello, Pivotal Tracker
+					</p>
+                </section>
+
+				<section>
+					<h4>Cloudformation Demo</h4>
+				</section>
+				<section>
+					<h3>Thank You</h3>
+					<p>
+						Join our Facebook Group : <a href="https://www.facebook.com/groups/serverless.indonesia/">Serverless Indonesia</a><br>
+						Our Medium Publications : <a href="https://medium.com/serverless-indonesia">Serverless Indonesia</a><br>
+						Our u(n)pdated Blog : <a href="https://blog.serverless.id">blog.serverless.id</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Transition style
+				transition: 'none',
+				slideNumber: 'c/t',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
